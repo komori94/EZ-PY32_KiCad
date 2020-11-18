@@ -1,0 +1,5 @@
+Warnung: 01:26:40: C:/Jenkins/workspace/windows-kicad-msys2-stable/src/kicad/utils/kicad2step/pcb/oce_utils.cpp: CreatePCB: 674
+Warnung:   * no valid board outline
+Warnung: 01:26:40: ** C:/Jenkins/workspace/windows-kicad-msys2-stable/src/kicad/utils/kicad2step/pcb/kicadpcb.cpp:ComposePCB:510
+Warnung: *  could not create PCB solid model
+Warnung: 
