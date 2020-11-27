@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -104,4 +104,26 @@ Wire Wire Line
 	5350 3800 5550 3800
 Wire Wire Line
 	4700 4150 4700 4350
+$Comp
+L Interface_Expansion:PCF8574A U?
+U 1 1 5FC808AE
+P 2500 3150
+F 0 "U?" H 2500 4031 50  0000 C CNN
+F 1 "PCF8574A" H 2500 3940 50  0000 C CNN
+F 2 "" H 2500 3150 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 2500 3150 50  0001 C CNN
+	1    2500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:PCF8584 U?
+U 1 1 5FC821CA
+P 2550 5300
+F 0 "U?" H 2550 6481 50  0000 C CNN
+F 1 "PCF8584" H 2550 6390 50  0000 C CNN
+F 2 "" H 2550 5300 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCF8584.pdf" H 2550 5300 50  0001 C CNN
+	1    2550 5300
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
