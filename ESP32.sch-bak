@@ -218,13 +218,13 @@ Wire Wire Line
 	6900 4750 6700 4750
 Wire Wire Line
 	6900 4850 6700 4850
-Text HLabel 6900 5050 2    50   Input ~ 0
+Text HLabel 6900 4250 2    50   Input ~ 0
 LCD_WR
 Text HLabel 6900 4750 2    50   Input ~ 0
 LCD_RD
 Text HLabel 6900 4050 2    50   Input ~ 0
 LCD_CS
-Text HLabel 6900 4950 2    50   Input ~ 0
+Text HLabel 6900 4350 2    50   Input ~ 0
 LCD_RS
 Text HLabel 6900 4150 2    50   Input ~ 0
 LCD_RST
@@ -321,9 +321,9 @@ Wire Wire Line
 	6900 2950 6700 2950
 Wire Wire Line
 	6700 3850 6900 3850
-Text HLabel 6900 4250 2    50   Input ~ 0
+Text HLabel 6900 4950 2    50   Input ~ 0
 Potti_B
-Text HLabel 6900 4350 2    50   Input ~ 0
+Text HLabel 6900 5050 2    50   Input ~ 0
 Potti_A
 NoConn ~ 5500 3950
 NoConn ~ 5500 4050

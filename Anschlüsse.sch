@@ -87,7 +87,7 @@ U 1 1 5FD40501
 P 6100 3150
 F 0 "J3" V 5935 3078 50  0000 C CNN
 F 1 "Conn_01x16_Male" V 6026 3078 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x16_P2.00mm_Vertical_SMD_Pin1Left" H 6100 3150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical_SMD_Pin1Left" H 6100 3150 50  0001 C CNN
 F 3 "~" H 6100 3150 50  0001 C CNN
 	1    6100 3150
 	0    1    1    0   
