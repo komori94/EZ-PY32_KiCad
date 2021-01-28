@@ -27,10 +27,10 @@ F 3 "~" H 1350 2350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Regulator_Linear:LM1117-3.3 U2
+L Regulator_Linear:LM1117-3.3 U4
 U 1 1 5FCC80C0
 P 5350 2150
-F 0 "U2" H 5350 2392 50  0000 C CNN
+F 0 "U4" H 5350 2392 50  0000 C CNN
 F 1 "LM1117-3.3" H 5350 2301 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5350 2150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 5350 2150 50  0001 C CNN
@@ -150,10 +150,10 @@ F 3 "~" H 4900 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:NXE2S1205MC U1
+L Regulator_Switching:NXE2S1205MC U3
 U 1 1 5FDD29DA
 P 2600 2350
-F 0 "U1" H 2600 2817 50  0000 C CNN
+F 0 "U3" H 2600 2817 50  0000 C CNN
 F 1 "NXE2S1205MC" H 2600 2726 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_muRata_NXExSxxxxMC_SMD" H 2600 2000 50  0001 C CNN
 F 3 "http://power.murata.com/data/power/ncl/kdc_nxe2.pdf" H 2600 1850 50  0001 C CNN

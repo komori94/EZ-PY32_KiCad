@@ -1,0 +1,288 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 3 6
+Title "EZ-PY 32"
+Date ""
+Rev "1.0"
+Comp "OTH Regensburg"
+Comment1 "Stefan Dendorfer"
+Comment2 "Moritz Kolb"
+Comment3 "VMCB WS2021"
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1550 5300 1600 5300
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5FC5F7E6
+P 1600 5300
+F 0 "#FLG02" H 1600 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 5473 50  0000 C CNN
+F 2 "" H 1600 5300 50  0001 C CNN
+F 3 "~" H 1600 5300 50  0001 C CNN
+	1    1600 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U4
+U 1 1 5FCC80C0
+P 5600 5100
+F 0 "U4" H 5600 5342 50  0000 C CNN
+F 1 "LM1117-3.3" H 5600 5251 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5600 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 5600 5100 50  0001 C CNN
+	1    5600 5100
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 5200 2    50   Input ~ 0
++5V
+$Comp
+L Device:C C6
+U 1 1 5FCD213F
+P 6200 5250
+F 0 "C6" H 6315 5296 50  0000 L CNN
+F 1 "10uF" H 6315 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6238 5100 50  0001 C CNN
+F 3 "~" H 6200 5250 50  0001 C CNN
+	1    6200 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5FCD2145
+P 6200 5550
+F 0 "#PWR030" H 6200 5300 50  0001 C CNN
+F 1 "GND" H 6205 5377 50  0000 C CNN
+F 2 "" H 6200 5550 50  0001 C CNN
+F 3 "" H 6200 5550 50  0001 C CNN
+	1    6200 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5400 6200 5550
+Wire Wire Line
+	5900 5100 6200 5100
+Connection ~ 6200 5100
+$Comp
+L power:GND #PWR029
+U 1 1 5FCD44A0
+P 5600 5550
+F 0 "#PWR029" H 5600 5300 50  0001 C CNN
+F 1 "GND" H 5605 5377 50  0000 C CNN
+F 2 "" H 5600 5550 50  0001 C CNN
+F 3 "" H 5600 5550 50  0001 C CNN
+	1    5600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5400 5600 5550
+Text HLabel 6850 5100 2    50   Input ~ 0
++3.3V
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5FEF9B0B
+P 1350 5200
+F 0 "J1" H 1458 5381 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1458 5290 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1350 5200 50  0001 C CNN
+F 3 "~" H 1350 5200 50  0001 C CNN
+	1    1350 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5200 4500 5200
+$Comp
+L power:+3.3V #PWR031
+U 1 1 5FFB61B2
+P 6800 5100
+F 0 "#PWR031" H 6800 4950 50  0001 C CNN
+F 1 "+3.3V" H 6815 5273 50  0000 C CNN
+F 2 "" H 6800 5100 50  0001 C CNN
+F 3 "" H 6800 5100 50  0001 C CNN
+	1    6800 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 5100
+Wire Wire Line
+	6800 5100 6850 5100
+Wire Wire Line
+	6200 5100 6800 5100
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5FD21126
+P 1600 5200
+F 0 "#FLG01" H 1600 5275 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 5373 50  0000 C CNN
+F 2 "" H 1600 5200 50  0001 C CNN
+F 3 "~" H 1600 5200 50  0001 C CNN
+	1    1600 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5200 1550 5200
+Wire Wire Line
+	5150 5400 5150 5550
+$Comp
+L power:GND #PWR028
+U 1 1 5FCD10D5
+P 5150 5550
+F 0 "#PWR028" H 5150 5300 50  0001 C CNN
+F 1 "GND" H 5155 5377 50  0000 C CNN
+F 2 "" H 5150 5550 50  0001 C CNN
+F 3 "" H 5150 5550 50  0001 C CNN
+	1    5150 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5100 5150 5100
+$Comp
+L Device:C C5
+U 1 1 5FCD10CF
+P 5150 5250
+F 0 "C5" H 5265 5296 50  0000 L CNN
+F 1 "10uF" H 5265 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5188 5100 50  0001 C CNN
+F 3 "~" H 5150 5250 50  0001 C CNN
+	1    5150 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:NXE2S1205MC U3
+U 1 1 5FDD29DA
+P 2850 5300
+F 0 "U3" H 2850 5767 50  0000 C CNN
+F 1 "NXE2S1205MC" H 2850 5676 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_muRata_NXExSxxxxMC_SMD" H 2850 4950 50  0001 C CNN
+F 3 "http://power.murata.com/data/power/ncl/kdc_nxe2.pdf" H 2850 4800 50  0001 C CNN
+	1    2850 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5FDD664C
+P 3800 5100
+F 0 "L1" H 3800 5315 50  0000 C CNN
+F 1 "22uH" H 3800 5224 50  0000 C CNN
+F 2 "EZ-PY32:8200" H 3800 5100 50  0001 C CNN
+F 3 "~" H 3800 5100 50  0001 C CNN
+	1    3800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FDD6DDE
+P 4350 5350
+F 0 "C4" H 4465 5396 50  0000 L CNN
+F 1 "10uF" H 4465 5305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4388 5200 50  0001 C CNN
+F 3 "~" H 4350 5350 50  0001 C CNN
+	1    4350 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5100 3550 5100
+Wire Wire Line
+	4050 5100 4350 5100
+Wire Wire Line
+	4350 5100 4350 5200
+$Comp
+L power:GND #PWR027
+U 1 1 5FDD824A
+P 4350 5500
+F 0 "#PWR027" H 4350 5250 50  0001 C CNN
+F 1 "GND" H 4355 5327 50  0000 C CNN
+F 2 "" H 4350 5500 50  0001 C CNN
+F 3 "" H 4350 5500 50  0001 C CNN
+	1    4350 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 5500
+$Comp
+L power:+5V #PWR026
+U 1 1 5FDD8842
+P 4350 5100
+F 0 "#PWR026" H 4350 4950 50  0001 C CNN
+F 1 "+5V" H 4365 5273 50  0000 C CNN
+F 2 "" H 4350 5100 50  0001 C CNN
+F 3 "" H 4350 5100 50  0001 C CNN
+	1    4350 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 5100
+Wire Wire Line
+	2350 5200 2350 5100
+Wire Wire Line
+	1600 5200 2000 5200
+Connection ~ 1600 5200
+Wire Wire Line
+	2350 5300 2350 5500
+Connection ~ 1600 5300
+$Comp
+L power:+12V #PWR024
+U 1 1 5FDDDBDA
+P 2000 5200
+F 0 "#PWR024" H 2000 5050 50  0001 C CNN
+F 1 "+12V" H 2015 5373 50  0000 C CNN
+F 2 "" H 2000 5200 50  0001 C CNN
+F 3 "" H 2000 5200 50  0001 C CNN
+	1    2000 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 5200
+Wire Wire Line
+	2000 5200 2200 5200
+Text HLabel 4100 5500 3    50   Input ~ 0
+GND
+Wire Wire Line
+	3350 5500 4350 5500
+Text HLabel 2200 4900 2    50   Input ~ 0
++12V
+Wire Wire Line
+	2200 4900 2200 5200
+Connection ~ 2200 5200
+Wire Wire Line
+	2200 5200 2350 5200
+Connection ~ 4350 5200
+Wire Wire Line
+	4350 5100 4650 5100
+Connection ~ 5150 5100
+Wire Wire Line
+	1600 5300 2000 5300
+$Comp
+L power:GND #PWR025
+U 1 1 5FDE5C7A
+P 2000 5300
+F 0 "#PWR025" H 2000 5050 50  0001 C CNN
+F 1 "GND" H 2005 5127 50  0000 C CNN
+F 2 "" H 2000 5300 50  0001 C CNN
+F 3 "" H 2000 5300 50  0001 C CNN
+	1    2000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5FE4336A
+P 4650 5100
+F 0 "#FLG03" H 4650 5175 50  0001 C CNN
+F 1 "PWR_FLAG" H 4650 5273 50  0000 C CNN
+F 2 "" H 4650 5100 50  0001 C CNN
+F 3 "~" H 4650 5100 50  0001 C CNN
+	1    4650 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 5100
+Wire Wire Line
+	4650 5100 5150 5100
+Connection ~ 2000 5300
+Wire Wire Line
+	2000 5300 2350 5300
+Text Notes 3250 3450 0    118  ~ 24
+Spannungsversorgung
+Text Notes 2450 4500 0    118  ~ 24
+12V->5V
+Text Notes 5150 4550 0    118  ~ 24
+5V->3,3V
+$EndSCHEMATC

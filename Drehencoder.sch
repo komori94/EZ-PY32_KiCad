@@ -26,10 +26,8 @@ F 5 "RES-10859" H 5700 3700 50  0001 L BNN "PROD_ID"
 	1    5700 3700
 	1    0    0    -1  
 $EndComp
-Text HLabel 4200 2700 0    50   Input ~ 0
-Potti_A
 Text HLabel 4200 4550 0    50   Input ~ 0
-Potti_B
+Encoder_B
 Text HLabel 6400 4400 0    50   Input ~ 0
 rot
 Text HLabel 6400 4800 0    50   Input ~ 0
@@ -323,7 +321,7 @@ L Device:R R9
 U 1 1 5FCC0078
 P 8350 4450
 F 0 "R9" H 8420 4496 50  0000 L CNN
-F 1 "94k" H 8420 4405 50  0000 L CNN
+F 1 "100k" H 8420 4405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8280 4450 50  0001 C CNN
 F 3 "~" H 8350 4450 50  0001 C CNN
 	1    8350 4450
@@ -406,4 +404,6 @@ Wire Wire Line
 	6300 4000 7750 4000
 Wire Wire Line
 	8350 4600 8350 4850
+Text HLabel 4200 2700 0    50   Input ~ 0
+Encoder_A
 $EndSCHEMATC

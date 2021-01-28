@@ -1,4 +1,4 @@
-update=04.01.2021 23:16:36
+update=26.01.2021 21:11:26
 version=1
 last_client=kicad
 [general]
@@ -251,10 +251,10 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=C:/Users/ThinkPad X1/iCloudDrive/Uni/7. Semester/PMC/EZ-PY32/plaene/
+PlotDirectoryName=../EZ-PY_32_Tex/pdf/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
-LabSize=50
+LabSize=118
 ERC_TestSimilarLabels=1

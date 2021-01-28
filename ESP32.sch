@@ -229,8 +229,6 @@ LCD_RS
 Text HLabel 6900 4150 2    50   Input ~ 0
 LCD_RST
 Wire Wire Line
-	6700 3250 6900 3250
-Wire Wire Line
 	6700 4050 6900 4050
 Wire Wire Line
 	6700 4150 6900 4150
@@ -243,7 +241,7 @@ Text HLabel 4150 1700 0    50   Input ~ 0
 Wire Wire Line
 	4400 1700 4150 1700
 Connection ~ 4400 1700
-Text HLabel 9000 3800 0    50   Input ~ 0
+Text HLabel 7100 5500 0    50   Input ~ 0
 GND
 Text GLabel 7550 2850 2    50   Input ~ 0
 Tx
@@ -284,8 +282,6 @@ Wire Wire Line
 Wire Wire Line
 	7550 3050 7450 3050
 Wire Wire Line
-	6900 3350 6700 3350
-Wire Wire Line
 	6900 3450 6700 3450
 Text HLabel 7800 2700 2    50   Input ~ 0
 Tx
@@ -310,9 +306,7 @@ gruen
 Text HLabel 6900 4650 2    50   Input ~ 0
 blau
 Text HLabel 6900 4450 2    50   Input ~ 0
-Potti_schalter
-Wire Wire Line
-	6900 3950 6700 3950
+Encoder_schalter
 Wire Wire Line
 	6900 3150 6700 3150
 Wire Wire Line
@@ -322,9 +316,9 @@ Wire Wire Line
 Wire Wire Line
 	6700 3850 6900 3850
 Text HLabel 6900 4950 2    50   Input ~ 0
-Potti_B
+Encoder_B
 Text HLabel 6900 5050 2    50   Input ~ 0
-Potti_A
+Encoder_A
 NoConn ~ 5500 3950
 NoConn ~ 5500 4050
 NoConn ~ 5500 4150
@@ -333,8 +327,6 @@ NoConn ~ 5500 4350
 NoConn ~ 5500 4450
 Text Notes 5400 4550 1    50   ~ 0
 laut datenblatt NC
-Wire Wire Line
-	6700 4550 6900 4550
 Text Notes 4900 3450 0    50   ~ 0
 R & C Werte\nnoch ermitteln
 Wire Notes Line
@@ -591,9 +583,9 @@ Text GLabel 2300 4300 1    50   Input ~ 0
 RTS
 Wire Wire Line
 	6700 2750 6950 2750
-Text HLabel 6900 3250 2    50   Input ~ 0
+Text HLabel 7900 3450 2    50   Input ~ 0
 SDA
-Text HLabel 6900 3950 2    50   Input ~ 0
+Text HLabel 7950 3750 2    50   Input ~ 0
 SCL
 NoConn ~ 3700 400 
 Wire Wire Line
@@ -609,20 +601,20 @@ Wire Wire Line
 Wire Wire Line
 	6100 5350 6100 5500
 $Comp
-L power:GND #PWR043
+L power:GND #PWR045
 U 1 1 5FFCB3AE
-P 9100 3950
-F 0 "#PWR043" H 9100 3700 50  0001 C CNN
-F 1 "GND" H 9105 3777 50  0000 C CNN
-F 2 "" H 9100 3950 50  0001 C CNN
-F 3 "" H 9100 3950 50  0001 C CNN
-	1    9100 3950
+P 7200 5650
+F 0 "#PWR045" H 7200 5400 50  0001 C CNN
+F 1 "GND" H 7205 5477 50  0000 C CNN
+F 2 "" H 7200 5650 50  0001 C CNN
+F 3 "" H 7200 5650 50  0001 C CNN
+	1    7200 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9000 3800 9100 3800
+	7100 5500 7200 5500
 Wire Wire Line
-	9100 3800 9100 3950
+	7200 5500 7200 5650
 Text HLabel 5500 3050 0    50   Input ~ 0
 SENSOR_VN
 Text HLabel 5500 2950 0    50   Input ~ 0
@@ -643,10 +635,10 @@ Wire Wire Line
 Wire Wire Line
 	2200 4050 2200 4300
 $Comp
-L Device:R R17
+L Device:R R18
 U 1 1 5FD60A3E
 P 8150 2950
-F 0 "R17" V 7943 2950 50  0000 C CNN
+F 0 "R18" V 7943 2950 50  0000 C CNN
 F 1 "10k" V 8034 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8080 2950 50  0001 C CNN
 F 3 "~" H 8150 2950 50  0001 C CNN
@@ -658,10 +650,10 @@ Wire Wire Line
 Wire Wire Line
 	7450 2950 8000 2950
 $Comp
-L RF_Module:ESP32-WROOM-32 U3
+L RF_Module:ESP32-WROOM-32 U5
 U 1 1 5FD79442
 P 6100 3950
-F 0 "U3" H 6100 5531 50  0000 C CNN
+F 0 "U5" H 6100 5531 50  0000 C CNN
 F 1 "ESP32-WROOM-32" H 6100 5440 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 6100 2450 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 5800 4000 50  0001 C CNN
@@ -725,4 +717,78 @@ Wire Wire Line
 	5200 2650 5350 2650
 Text Notes 3900 2400 0    50   ~ 0
 RC Glied ensure power supply during power-up
+Wire Wire Line
+	6700 3250 7850 3250
+Wire Wire Line
+	7850 3250 7850 3450
+Wire Wire Line
+	7850 3450 7900 3450
+Wire Wire Line
+	7850 3250 8200 3250
+Connection ~ 7850 3250
+$Comp
+L Device:R R19
+U 1 1 5FF83538
+P 8350 3250
+F 0 "R19" V 8143 3250 50  0000 C CNN
+F 1 "4k7" V 8234 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8280 3250 50  0001 C CNN
+F 3 "~" H 8350 3250 50  0001 C CNN
+	1    8350 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5FF83E9C
+P 8350 3950
+F 0 "R17" H 8420 3996 50  0000 L CNN
+F 1 "4k7" H 8420 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8280 3950 50  0001 C CNN
+F 3 "~" H 8350 3950 50  0001 C CNN
+	1    8350 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR044
+U 1 1 5FF8446D
+P 8650 3250
+F 0 "#PWR044" H 8650 3100 50  0001 C CNN
+F 1 "+3.3V" H 8665 3423 50  0000 C CNN
+F 2 "" H 8650 3250 50  0001 C CNN
+F 3 "" H 8650 3250 50  0001 C CNN
+	1    8650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR043
+U 1 1 5FF84C5E
+P 8650 3750
+F 0 "#PWR043" H 8650 3600 50  0001 C CNN
+F 1 "+3.3V" H 8665 3923 50  0000 C CNN
+F 2 "" H 8650 3750 50  0001 C CNN
+F 3 "" H 8650 3750 50  0001 C CNN
+	1    8650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3250 8650 3250
+Wire Wire Line
+	6700 3350 6900 3350
+Wire Wire Line
+	6700 4550 6900 4550
+Wire Wire Line
+	8650 3950 8500 3950
+Wire Wire Line
+	8650 3750 8650 3950
+Wire Wire Line
+	6700 3950 7850 3950
+Wire Wire Line
+	7950 3750 7850 3750
+Wire Wire Line
+	7850 3750 7850 3950
+Connection ~ 7850 3950
+Wire Wire Line
+	7850 3950 8200 3950
+Text Notes 7950 3650 0    50   ~ 0
+I^2C
 $EndSCHEMATC

@@ -1,0 +1,161 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 6 6
+Title "EZ-PY 32"
+Date ""
+Rev "1.0"
+Comp "OTH Regensburg"
+Comment1 "Stefan Dendorfer"
+Comment2 "Moritz Kolb"
+Comment3 "VMCB WS2021"
+Comment4 ""
+$EndDescr
+Text HLabel 3850 5200 2    50   Input ~ 0
+SDA
+Text HLabel 3850 5300 2    50   Input ~ 0
+SCL
+Text HLabel 3350 5500 0    50   Input ~ 0
+SD_SCK
+Text HLabel 3350 5300 0    50   Input ~ 0
+SD_DI
+Text HLabel 3350 5400 0    50   Input ~ 0
+SD_D0
+Text HLabel 3350 5200 0    50   Input ~ 0
+SD_SS
+Text HLabel 3850 5800 2    50   Input ~ 0
+TX
+Text HLabel 3850 5700 2    50   Input ~ 0
+Rx
+Text HLabel 5950 5500 2    50   Input ~ 0
+GND
+Text HLabel 5950 5300 2    50   Input ~ 0
+12V
+$Comp
+L power:GND #PWR051
+U 1 1 5FFF286B
+P 5850 5500
+F 0 "#PWR051" H 5850 5250 50  0001 C CNN
+F 1 "GND" H 5855 5327 50  0000 C CNN
+F 2 "" H 5850 5500 50  0001 C CNN
+F 3 "" H 5850 5500 50  0001 C CNN
+	1    5850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR053
+U 1 1 5FFF3450
+P 5850 5300
+F 0 "#PWR053" H 5850 5150 50  0001 C CNN
+F 1 "+12V" H 5865 5473 50  0000 C CNN
+F 2 "" H 5850 5300 50  0001 C CNN
+F 3 "" H 5850 5300 50  0001 C CNN
+	1    5850 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5300 5950 5300
+$Comp
+L power:GND #PWR048
+U 1 1 5FFF3FA3
+P 4300 5400
+F 0 "#PWR048" H 4300 5150 50  0001 C CNN
+F 1 "GND" H 4305 5227 50  0000 C CNN
+F 2 "" H 4300 5400 50  0001 C CNN
+F 3 "" H 4300 5400 50  0001 C CNN
+	1    4300 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR052
+U 1 1 5FFF43D1
+P 2750 5600
+F 0 "#PWR052" H 2750 5450 50  0001 C CNN
+F 1 "+12V" H 2765 5773 50  0000 C CNN
+F 2 "" H 2750 5600 50  0001 C CNN
+F 3 "" H 2750 5600 50  0001 C CNN
+	1    2750 5600
+	1    0    0    -1  
+$EndComp
+Text HLabel 3350 5700 0    50   Input ~ 0
+SENSOR_VN
+Text HLabel 3350 5800 0    50   Input ~ 0
+SENSOR_VP
+$Comp
+L power:+3.3V #PWR049
+U 1 1 5FD44140
+P 4150 5600
+F 0 "#PWR049" H 4150 5450 50  0001 C CNN
+F 1 "+3.3V" H 4300 5650 50  0000 C CNN
+F 2 "" H 4150 5600 50  0001 C CNN
+F 3 "" H 4150 5600 50  0001 C CNN
+	1    4150 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR050
+U 1 1 5FD44777
+P 3350 5900
+F 0 "#PWR050" H 3350 5750 50  0001 C CNN
+F 1 "+5V" H 3365 6073 50  0000 C CNN
+F 2 "" H 3350 5900 50  0001 C CNN
+F 3 "" H 3350 5900 50  0001 C CNN
+	1    3350 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR055
+U 1 1 5FD45FA7
+P 5850 5000
+F 0 "#PWR055" H 5850 4850 50  0001 C CNN
+F 1 "+3.3V" H 5865 5173 50  0000 C CNN
+F 2 "" H 5850 5000 50  0001 C CNN
+F 3 "" H 5850 5000 50  0001 C CNN
+	1    5850 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR054
+U 1 1 5FD45FAD
+P 5850 4700
+F 0 "#PWR054" H 5850 4550 50  0001 C CNN
+F 1 "+5V" H 5865 4873 50  0000 C CNN
+F 2 "" H 5850 4700 50  0001 C CNN
+F 3 "" H 5850 4700 50  0001 C CNN
+	1    5850 4700
+	1    0    0    -1  
+$EndComp
+Text HLabel 5950 4700 2    50   Input ~ 0
+5V
+Text HLabel 5950 5000 2    50   Input ~ 0
+3V3
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J3
+U 1 1 6007D5A3
+P 3550 5500
+F 0 "J3" H 3600 6017 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 3600 5926 50  0000 C CNN
+F 2 "EZ-PY32:HTSS-108-01-YY-DV" H 3550 5500 50  0001 C CNN
+F 3 "~" H 3550 5500 50  0001 C CNN
+	1    3550 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5600 4150 5600
+Wire Wire Line
+	3350 5600 2750 5600
+Wire Wire Line
+	3850 5400 4300 5400
+NoConn ~ 3850 5500
+NoConn ~ 3850 5900
+Wire Wire Line
+	5950 4700 5850 4700
+Wire Wire Line
+	5950 5000 5850 5000
+Wire Wire Line
+	5850 5500 5950 5500
+Text Notes 3650 3450 0    118  ~ 24
+Stecker
+$EndSCHEMATC
